@@ -1,0 +1,49 @@
+.bg {
+    /* The image used */
+    background-image: url("../images/about.gif");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote {
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  margin: 4em;
+}
+.quote > blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em .5em;
+    padding: 0.2em;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size: 1em;
+    font-style: italic;
+    background: rgba(255,255,255,0.3);
+}
+.quote > blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+}
+.quote > blockquote > p {
+  text-align: right;
+  padding: 1em;
+}
+
+.text {
+  background: #f9f9f9;
+  border-radius: 0px 50px 0px 50px;
+  border: 1px solid cyan;
+  margin: 1em;
+  background: rgba(255,255,255,0.3);
+  padding: 1em;
+}
+.text > p {
+  padding: 0.5em;
+}

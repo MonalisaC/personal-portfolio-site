@@ -1,0 +1,28 @@
+* {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+a{text-decoration:none;color:inherit;}
+
+body, html {
+    height: 100%;
+    font-family: Georgia, Serif, "Times New Roman", Times, serif;
+}
+
+div nav {
+  position: fixed;
+  height: 2em;
+  width: 100%;
+  top: 0;
+  /*background-color: rgb(249, 211, 240);*/
+  background: cyan;
+}
+div nav > ul {
+  display: flex;
+  justify-content: space-around;
+  margin: .5em;
+}
+div nav > ul > li:hover {
+  background-color: rgb(250, 232, 112);
+}
