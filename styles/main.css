@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  list-style-type: none;
+}
+.parallax {
+    /* The image used */
+    background-image: url("http://beyondmeasuretraining.com/wp-content/uploads/2017/10/Start-Road-Cocaine-Addiction-Treatment-SummitHelps.com_.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+  background-color: rgb(249, 235, 248);
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif
+}
+
+div nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(249, 211, 240);
+}
+div nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+div nav > ul > li:hover {
+  background-color: rgb(250, 232, 112);
+}
+div nav > ul > li:nth-child(1) {
+  margin-right: auto;
+}
+div nav > ul > li:nth-child(2) {
+  margin-right: 20%;
+}
+div nav > ul > li:nth-child(3) {
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.hello div p{
+position: absolute;
+  text-align: center;;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.intro {
+  margin-top: 5em;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
+  height: 200px;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact ul > li {
+  display: inline-block;}
+.contact ul > li img {
+  height: 50px;
+  width: 50px;
+}
+
+aside {
+  display: block;
+  float: right;
+}
+
+.rounded-corners {
+  background-color: white;
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+}
+
+footer {
+  display: block;
+  background-color: rgb(249, 211, 240);
+  color: white;
+  border: solid;
+  border-color: rgb(249, 157, 232);
+  border-radius: 10px;
+  text-align: center;
+}
