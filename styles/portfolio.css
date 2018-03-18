@@ -1,0 +1,79 @@
+.bg {
+  background-image: url("../images/portfolio.jpg");
+}
+
+.detail-container {
+  display: grid;
+  grid-template-areas: "a b"
+  "c d";
+  margin: 3em;
+  padding: .5em;
+  grid-template-columns: repeat(2, minmax(250px, 350px));
+  grid-template-rows: repeat(2, minmax(250px, 350px));
+  justify-content:space-around;
+}
+
+.detail-container > section {
+  padding: 30px;
+  /*padding-bottom: 100px;*/
+
+  color: black;
+  /*border: 1px dotted white;*/
+  align-content: center;
+  /*background-attachment: fixed;*/
+  height: 100%;
+
+}
+
+.github {
+  width: 15px;
+  height: 15px;
+}
+
+section:nth-child(1){
+  background-image: url("../images/dilbert.gif");
+  background-repeat: no-repeat;
+  /*background-size: 200px 300px;*/
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section:nth-child(2){
+  background-image: url("../images/calculator.gif");
+  background-repeat: no-repeat;
+  /*background-size: 250px 300px;*/
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: yellow;
+
+}
+section:nth-child(3){
+  background-image: url("../images/scrabble.gif");
+  background-repeat: no-repeat;
+  /*background-size: 250px 300px;*/
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section:nth-child(4){
+  background-image: url("../images/hotel.gif");
+  background-repeat: no-repeat;
+  /*background-size: 250px 300px;*/
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: blue
+}
