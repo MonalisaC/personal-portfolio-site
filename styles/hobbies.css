@@ -135,7 +135,7 @@
   background:cyan;
   float:left;
   margin-right:5px;
-  cursor:pointer;
+  /*cursor:pointer;*/
 }
 .switch ul{
   overflow:hidden;
