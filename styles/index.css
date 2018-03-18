@@ -50,39 +50,3 @@
   justify-content: space-between;
   padding: 5em;
 }
-
-.contact{
-  margin: 10em;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.contact ul > li {
-  display: inline-block;}
-.contact ul > li img {
-  height: 50px;
-  width: 50px;
-}
-
-aside {
-  display: block;
-  float: right;
-}
-
-.rounded-corners {
-  background-color: white;
-  border-radius: 30px;
-  height: 150px;
-  width: 150px;
-}
-
-footer {
-  display: block;
-  background-color: rgb(249, 211, 240);
-  color: white;
-  border: solid;
-  border-color: rgb(249, 157, 232);
-  border-radius: 10px;
-  text-align: center;
-}
