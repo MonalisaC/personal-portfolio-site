@@ -1,27 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.parallax {
-    /* The image used */
-    background-image: url("http://beyondmeasuretraining.com/wp-content/uploads/2017/10/Start-Road-Cocaine-Addiction-Treatment-SummitHelps.com_.jpg");
-
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-body {
-  background-color: rgb(249, 235, 248);
-  font-size: 1em;
-  font-family: "Times New Roman", Times, serif
+.bg {
+  background-image: url("../images/index.jpg");
 }
 
 .hello div p{
-position: absolute;
+  position: absolute;
+  top: 7em;
+  left: 2em;
   text-align: center;;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -62,6 +48,7 @@ position: absolute;
   font-family: 'Roboto', sans-serif;
   align-items: center;
   justify-content: space-between;
+  padding: 5em;
 }
 
 .contact{

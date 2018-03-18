@@ -10,6 +10,17 @@ body, html {
     font-family: Georgia, Serif, "Times New Roman", Times, serif;
 }
 
+.bg {
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div nav {
   position: fixed;
   height: 2em;
