@@ -13,7 +13,7 @@
   justify-content:space-around;
 }
 
-.detail-container > section {
+.detail-container > a > section {
   padding: 30px;
   /*padding-bottom: 100px;*/
 
