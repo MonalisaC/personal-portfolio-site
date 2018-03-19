@@ -8,12 +8,12 @@
   "c d";
   margin: 3em;
   padding: .5em;
-  grid-template-columns: repeat(2, minmax(250px, 350px));
-  grid-template-rows: repeat(2, minmax(250px, 350px));
+  grid-template-columns: repeat(2, minmax(250px, 300px));
+  grid-template-rows: repeat(2, minmax(250px, 300px));
   justify-content:space-around;
 }
 
-.detail-container > a > section {
+.detail-container > section {
   padding: 30px;
   /*padding-bottom: 100px;*/
 
@@ -22,58 +22,70 @@
   align-content: center;
   /*background-attachment: fixed;*/
   height: 100%;
-
 }
 
 .github {
-  width: 15px;
-  height: 15px;
+  /*width: 20px;*/
+  height: 25px;
 }
 
-section:nth-child(1){
-  background-image: url("../images/dilbert.gif");
-  background-repeat: no-repeat;
-  /*background-size: 200px 300px;*/
+.detail-container > section > a > h2 {
   display: flex;
-  flex: 1;
-  flex-flow: row wrap;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  flex-flow: row;
+  justify-content: space-between;
 }
-section:nth-child(2){
-  background-image: url("../images/calculator.gif");
-  background-repeat: no-repeat;
-  /*background-size: 250px 300px;*/
-  display: flex;
-  flex: 1;
-  flex-flow: row wrap;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: yellow;
 
+.card {
+  position: absolute;
+  /*top: 50%;
+  left: 50%;*/
+  width: 250px;
+  height: 250px;
+  /*margin: -150px;*/
+  float: left;
+  perspective: 500px;
 }
-section:nth-child(3){
-  background-image: url("../images/scrabble.gif");
-  background-repeat: no-repeat;
-  /*background-size: 250px 300px;*/
-  display: flex;
-  flex: 1;
-  flex-flow: row wrap;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
-section:nth-child(4){
-  background-image: url("../images/hotel.gif");
-  background-repeat: no-repeat;
-  /*background-size: 250px 300px;*/
-  display: flex;
-  flex: 1;
-  flex-flow: row wrap;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: blue
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 30px;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  /*color: white;*/
+  transform: rotateY( 180deg );
+}
+
+.front > img {
+  /*object-fit: contain;*/
+  width: 250px;
+  height: 250px;
+}
+
+.back > p {
+  margin: 10px;
 }
